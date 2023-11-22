@@ -14,7 +14,7 @@ datasource db {
 model Post {
 title String @db.VarChar(30)
 slug String @unique @db.VarChar(60)
-image String? @db.VarChar(100)
+image String? @db.Text
 content String @db.Text
 published Boolean @default(false)
 createdAt DateTime @default(now())
