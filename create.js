@@ -4,8 +4,8 @@ const prisma = new PrismaClient();
 //funzione create
 prisma.post.create({
     data:{
-        title: "primo post",
-        slug: "primo-post",
+        title: "secondo post",
+        slug: "secondo-post",
         content: "lorem ipsum",
     } 
 }).then((newPost)=>{
